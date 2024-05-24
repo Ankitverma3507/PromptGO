@@ -1,13 +1,14 @@
 /** @type {import('next').NextConfig} */
 
 const nextConfig = {
-  missingSuspenseWithCSRBailout: false,
   
+
   api:{
     bodyParser :true,
   },
 
 experimental: {
+  missingSuspenseWithCSRBailout: false,
   appDir: true,
   serverComponentsExternalPackages: ["mongoose"],
 },
